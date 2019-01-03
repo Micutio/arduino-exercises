@@ -133,6 +133,17 @@ byte space[5] = {B00000000,
                  B00000000,
                  B00000000};
 
+/**
+ * TODO: Change this method to allow for transition of symbols, e.g.: a marquee
+ * running display on the dot-matrix.
+ * Rough outline:
+    - variable for the current symbol
+    - next symbol as method argument
+    - for i in 0 .. 7 (symbols are 5 wide for now)
+        - shift bits in current symbol one to the left
+        - copy bit 7-i from next symbol into current symbol 
+ *  
+ */
 void setLetter(byte lttr[5]) {
   lc.setRow(0, 0, lttr[0]);
   lc.setRow(0, 1, lttr[1]);
@@ -140,10 +151,13 @@ void setLetter(byte lttr[5]) {
   lc.setRow(0, 3, lttr[3]);
   lc.setRow(0, 4, lttr[4]);
 }
+
 /*
  This method will display the characters for the
  word "Arduino" one after the other on the matrix. 
  (you need at least 5x7 leds to see the whole chars)
+ TODO: Change this to hand over a string and map the letters
+ to characters so that they can be parsed from said string.
  */
 void writeMessageOnMatrix() {
 

@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/home/michl/apps/arduino/arduino-1.8.8-linux64/arduino-1.8.8/hardware/arduino/avr/**",
+                "/home/michl/apps/arduino/arduino-1.8.8-linux64/arduino-1.8.8/tools/**",
+                "/home/michl/apps/arduino/arduino-1.8.8-linux64/arduino-1.8.8/hardware/**",
+                "/home/michl/apps/arduino/arduino-1.8.8-linux64/arduino-1.8.8/hardware/tools/avr/avr/include/avr/**",
+                "/usr/include",
+                "/usr/local/include",
+                "/usr/include/x86_64-linux-gnu",
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "forcedInclude": [
+                "/home/michl/apps/arduino/arduino-1.8.8-linux64/arduino-1.8.8/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ]
+        }
+    ],
+    "version": 4
+}
